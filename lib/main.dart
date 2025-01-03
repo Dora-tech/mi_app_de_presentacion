@@ -22,10 +22,13 @@ class MiCartaDePresentacion extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.indigo,
-      body:SizedBox(
-        height: 200,
-        width: 200,
-        child: const Placeholder(),
+          body:Column(
+            children: [
+              CircleAvatar(
+                  child: Text('PR'),
+                  radius: 200,
+              )
+        ],       
       )
     ); // Placeholder es un widget de ejemplo
   }
