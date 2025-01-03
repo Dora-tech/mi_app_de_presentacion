@@ -18,18 +18,23 @@ class MyApp extends StatelessWidget {
 class MiCartaDePresentacion extends StatelessWidget {
   const MiCartaDePresentacion({super.key});
 
-  @override
+
+ @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.indigo,
-          body:Column(
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.indigo,
+        body: SafeArea(
+          child: Column(
             children: [
               CircleAvatar(
-                  child: Text('PR'),
-                  radius: 200,
-              )
-        ],       
-      )
-    ); // Placeholder es un widget de ejemplo
+                child: const Text('PR'),
+                radius: 100,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
