@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
+  font_awesome_flutter: ^10.4.0 # Agrega esta línea
 
 dev_dependencies:
   flutter_test:
@@ -23,4 +24,5 @@ flutter:
   assets:
     - assets/profile.jpg
     - assets/qr_code.png
+  
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple[100],
+      backgroundColor: const Color.fromARGB(255, 229, 18, 95),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -48,17 +49,33 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 10),
-              // Íconos sociales
+              // Íconos sociales actualizados
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  Icon(Icons.facebook, color: Colors.white, size: 30),
+                  Icon(
+                    FontAwesomeIcons.facebook,
+                    color: Colors.white,
+                    size: 30,
+                  ),
                   SizedBox(width: 15),
-                  Icon(Icons.email, color: Colors.white, size: 30),
+                  Icon(
+                    FontAwesomeIcons.twitter,
+                    color: Colors.white,
+                    size: 30,
+                  ),
                   SizedBox(width: 15),
-                  Icon(Icons.link, color: Colors.white, size: 30), // Logo de X
+                  Icon(
+                    FontAwesomeIcons.instagram,
+                    color: Colors.white,
+                    size: 30,
+                  ),
                   SizedBox(width: 15),
-                  Icon(Icons.linked_camera, color: Colors.white, size: 30),
+                  Icon(
+                    FontAwesomeIcons.linkedin,
+                    color: Colors.white,
+                    size: 30,
+                  ),
                 ],
               ),
               const SizedBox(height: 20),
