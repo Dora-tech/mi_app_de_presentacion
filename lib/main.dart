@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                   ),
                   SizedBox(width: 15),
                   Icon(
-                    FontAwesomeIcons.twitter,
+                    FontAwesomeIcons.xTwitter,
                     color: Colors.white,
                     size: 30,
                   ),
